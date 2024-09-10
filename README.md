@@ -41,10 +41,21 @@
 
 # rm -r maret: Direktori maret dan semua file serta subdirektori yang ada di dalamnya akan dihapus secara permanen, ls: Terminal akan menampilkan daftar semua file dan direktori yang tersisa di dalam direktori saat ini, Jika perintah rm -r maret berhasil, maka direktori maret tidak akan muncul lagi dalam daftar ini.
 
-### 8.  Ubahkan kepemilikan sub direktori februari sehingga user dan group hanya dapat melakukan read, dan cobalah untuk membuat direktori baru haha pada sub direktori
+### 8.  Ubahkan kepemilikan sub direktori februari sehingga user dan group hanya dapat melakukan read, dan cobalah untuk membuat direktori baru haha pada sub direktori februari.
+
 
 ![2 8](https://github.com/user-attachments/assets/5ac9d6ed-09e5-4a54-9b1f-bee19b98c1cc)
 
-#
+# ls -ld februari: Menampilkan informasi lengkap tentang direktori februari, termasuk izin aksesnya. chmod u+w februari: Pemilik dari direktori februari sekarang memiliki izin untuk menulis (write) ke dalam direktori tersebut, yang berarti mereka bisa membuat, mengubah, atau menghapus file/direktori di dalamnya. chmod 777 februari: Semua pengguna (pemilik, grup, dan others) akan memiliki izin penuh untuk membaca, menulis, dan mengeksekusi dalam direktori februari. mkdir februari/haha: Direktori baru bernama haha akan dibuat di dalam direktori februari.
+
+### 9. Modifikasi umask dari file dataku pada sub direktori januari menjadi 027 dan berapakan nilai default-nya ?
+
 ![2 9](https://github.com/user-attachments/assets/213cd756-ccdb-40d9-9735-6b383574076d)
+
+# umask: Menampilkan nilai umask saat ini, umask 027: Mengatur umask sehingga file baru dibuat dengan izin yang lebih ketat, biasanya 640 untuk file dan 750 untuk direktori, touch januari/dataku: Membuat file dataku dengan izin yang diatur oleh umask 027, yang berarti izin file ini adalah 640, umask 022: Mengembalikan umask ke pengaturan yang lebih permisif, 022.
+
+### 10. Buatlah link dari file dataku ke file dataku.ini dan file dataku.juga dan dengan perintah list perhatikan berapa link yang terjadi ?
+
 ![2 10](https://github.com/user-attachments/assets/9b708560-57e8-4c1f-9e09-c868c59abc8d)
+
+# Perintah `cd januari` memindahkan direktori kerja ke "januari", kemudian perintah `ln dataku dataku.ini` dan `ln dataku dataku.juga` membuat dua hard link, "dataku.ini" dan "dataku.juga", yang mengarah ke file "dataku" di direktori yang sama, sehingga kedua nama link ini menjadi referensi tambahan untuk file tersebut.
