@@ -22,15 +22,29 @@
 
 # Perintah `chmod go+w januari/dataku` digunakan untuk menambahkan izin tulis (write) bagi grup dan pengguna lain pada file atau direktori bernama "dataku" di dalam folder "januari", sedangkan perintah `ls -l januari/dataku` akan menampilkan detail informasi tentang file atau direktori tersebut, termasuk izin akses, pemilik, ukuran, dan waktu modifikasi terakhir.
 
-### 5. Ubahlah ijin akses file dataku pada sub direktori pebruari sehingga user dapat melakukan baik write, read maupun execute, tetapi group dan others hanya bisa read
+### 5. Ubahlah ijin akses file dataku pada sub direktori pebruari sehingga user dapat melakukan baik write, read maupun execute, tetapi group dan others hanya bisa read dan execute.
+
 
 ![2 5](https://github.com/user-attachments/assets/8510d32e-1c69-496b-97b3-9c9f2f6ada8e)
 
 # Perintah `chmod 754 februari/dataku` digunakan untuk mengubah izin akses file atau direktori bernama "dataku" di dalam folder "februari". Izin akses ini berarti: Pemilik file memiliki izin penuh (membaca, menulis, dan mengeksekusi), Grup pengguna hanya bisa membaca dan mengeksekusi file, tetapi tidak bisa menulis, Pengguna lain hanya bisa membaca file tanpa izin eksekusi atau penulisan. Selanjutnya, perintah `ls -l februari/dataku` digunakan untuk menampilkan detail informasi dari file atau direktori "dataku" di folder "februari". Hasilnya akan menunjukkan izin akses, ukuran file, waktu modifikasi terakhir, dan nama pemilik file.
 
+### 6.  Ubahlah ijin akses file dataku pada sub direktori maret sehingga semua dapat melakukan write, read dan execute.
 
 ![2 6](https://github.com/user-attachments/assets/e85ad6f0-b02a-47d1-b7b4-1e83e96bce55)
+
+# Perintah `chmod 777 maret/dataku` memberikan izin penuh (membaca, menulis, dan mengeksekusi) kepada semua pengguna pada file atau direktori "dataku" di dalam folder "maret", sedangkan perintah `ls -l maret/dataku` menampilkan detail informasi tentang file atau direktori tersebut, termasuk izin akses dan atribut lainnya.
+
+### 7. Hapuslah direktori maret.
+
 ![2 7](https://github.com/user-attachments/assets/d38eec72-3f38-43a2-8e79-f6f4ca46d34e)
+
+# rm -r maret: Direktori maret dan semua file serta subdirektori yang ada di dalamnya akan dihapus secara permanen, ls: Terminal akan menampilkan daftar semua file dan direktori yang tersisa di dalam direktori saat ini, Jika perintah rm -r maret berhasil, maka direktori maret tidak akan muncul lagi dalam daftar ini.
+
+### 8.  Ubahkan kepemilikan sub direktori februari sehingga user dan group hanya dapat melakukan read, dan cobalah untuk membuat direktori baru haha pada sub direktori
+
 ![2 8](https://github.com/user-attachments/assets/5ac9d6ed-09e5-4a54-9b1f-bee19b98c1cc)
+
+#
 ![2 9](https://github.com/user-attachments/assets/213cd756-ccdb-40d9-9735-6b383574076d)
 ![2 10](https://github.com/user-attachments/assets/9b708560-57e8-4c1f-9e09-c868c59abc8d)
